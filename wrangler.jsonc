@@ -15,17 +15,17 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "silmara-semi-joias-db",
+      "database_name": "silmara-db",
       "database_id": "0198b40c-a417-7c21-a141-1a463d0644ea",
       "migrations_dir": "./migrations",
       "migrations_table": "migrations"
     },
-    {
-      "binding": "DB_DEV",
-      "database_name": "silmara-db-local",
-      "database_id": "silmara-db-local",
-      "migrations_dir": "./migrations",
-      "migrations_table": "migrations"
-    }
+    // {
+    //   "binding": "DB_DEV",
+    //   "database_name": "silmara-db-local",
+    //   "database_id": "silmara-db-local",
+    //   "migrations_dir": "./migrations",
+    //   "migrations_table": "migrations"
+    // }
   ]
 }

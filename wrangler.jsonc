@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "0198b40c-a417-7c21-a141-1a463d0644ea",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "assets": {
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "0198b40c-a417-7c21-a141-1a463d0644ea",
+      "database_id": "0198b40c-a417-7c21-a141-1a463d0644ea",
+      "preview_database_id": "silmara-db-local"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "0198b40c-a417-7c21-a141-1a463d0644ea",
+  "name": "silmara-semi-joias",
   "main": "./src/worker/index.ts",
   "compatibility_date": "2025-06-17",
   "compatibility_flags": ["nodejs_compat"],
@@ -15,9 +15,17 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "0198b40c-a417-7c21-a141-1a463d0644ea",
+      "database_name": "silmara-semi-joias-db",
       "database_id": "0198b40c-a417-7c21-a141-1a463d0644ea",
-      "preview_database_id": "silmara-db-local"
+      "migrations_dir": "./migrations",
+      "migrations_table": "migrations"
+    },
+    {
+      "binding": "DB_DEV",
+      "database_name": "silmara-db-local",
+      "database_id": "silmara-db-local",
+      "migrations_dir": "./migrations",
+      "migrations_table": "migrations"
     }
   ]
 }

@@ -19,13 +19,6 @@
       "database_id": "56e5e520-4811-4791-9e1a-59cb7968e934",
       "migrations_dir": "./migrations",
       "migrations_table": "migrations"
-    },
-    // {
-    //   "binding": "DB_DEV",
-    //   "database_name": "silmara-db-local",
-    //   "database_id": "silmara-db-local",
-    //   "migrations_dir": "./migrations",
-    //   "migrations_table": "migrations"
-    // }
+    }
   ]
 }

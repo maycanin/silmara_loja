@@ -1,0 +1,19 @@
+name = "silmara-semi-joias"
+main = "./src/worker/index.ts"
+compatibility_date = "2025-06-17"
+upload_source_maps = true
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+  enabled = true
+
+[assets]
+  directory = "public"
+  not_found_handling = "single-page-application"
+
+[[d1_databases]]
+  binding = "DB"
+  database_name = "silmara-db"
+  database_id = "56e5e520-4811-4791-9e1a-59cb7968e934"
+  migrations_dir = "./migrations"
+  migrations_table = "migrations"

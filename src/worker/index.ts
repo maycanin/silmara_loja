@@ -1,8 +1,11 @@
+export interface Env {
+  DB: D1Database;
+}
+
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { zValidator } from "@hono/zod-validator";
 import { z } from "zod";
-
 
 const app = new Hono<{ Bindings: Env }>();
 

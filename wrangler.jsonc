@@ -16,7 +16,7 @@
     {
       "binding": "DB",
       "database_name": "silmara-db",
-      "database_id": "0198b40c-a417-7c21-a141-1a463d0644ea",
+      "database_id": "56e5e520-4811-4791-9e1a-59cb7968e934",
       "migrations_dir": "./migrations",
       "migrations_table": "migrations"
     },

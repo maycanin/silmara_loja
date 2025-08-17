@@ -1,11 +1,16 @@
-export interface Env {
-  DB: D1Database;
-}
-
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { zValidator } from "@hono/zod-validator";
 import { z } from "zod";
+
+// Importa bcryptjs
+import bcrypt from "bcryptjs";
+
+// Interface que define o ambiente de execução do Worker.
+// É aqui que o TypeScript encontra o tipo D1Database.
+export interface Env {
+  DB: D1Database;
+}
 
 const app = new Hono<{ Bindings: Env }>();
 
@@ -155,6 +160,9 @@ app.post("/api/admin/login", zValidator("json", LoginSchema), async (c) => {
   // For demo purposes, we'll use simple password check
   // In production, you should use proper bcrypt verification
   const isValidPassword = password === "admin2025";
+  // O seu código original tinha uma verificação de senha simples.
+  // Mude para o bcrypt para maior segurança, se preferir.
+  // const isValidPassword = await bcrypt.compare(password, user.password_hash);
 
   if (!isValidPassword) {
     return c.json({ error: "Invalid credentials" }, 401);

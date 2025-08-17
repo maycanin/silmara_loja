@@ -1,5 +1,6 @@
 name = "silmara-semi-joias"
-main = "./src/worker/index.ts"
+pages_build_output_dir = "functions/src/react-app"
+main = "functions/src/worker/index.ts"
 compatibility_date = "2025-06-17"
 upload_source_maps = true
 compatibility_flags = ["nodejs_compat"]

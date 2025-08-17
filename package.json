@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./functions/src/worker/index.ts",
   "dependencies": {
     "@hono/zod-validator": "^0.5.0",
     "@types/bcryptjs": "^3.0.0",

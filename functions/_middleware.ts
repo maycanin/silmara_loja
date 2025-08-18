@@ -1,5 +1,5 @@
 // Importa o seu backend (o worker) que agora está em uma pasta acima.
-import app from './src/worker/index';
+import app from '../src/worker/index';
 
 export const onRequest: PagesFunction = async ({ request, next, env }) => {
   const url = new URL(request.url);

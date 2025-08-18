@@ -13,7 +13,7 @@
     "moduleResolution": "bundler"
   },
   "include": [
-    "functions/src/worker",
+    "./src/worker",
     "functions/_middleware.ts"
   ]
 }
